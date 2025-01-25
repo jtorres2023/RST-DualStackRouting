@@ -907,6 +907,7 @@ B   B22::1/128 [20/0]
 	!!!Down,Attempt,Init,2-Way,Exstart,Exchange,Loading,Full. (sh ip ospf nei)
 	!!! ping 2026::34:2 sa R1, hindi ma-ping kanina... lusot na now :)
 
+
 R1#ping 2026::34:2 
 Type escape sequence to abort.
 Sending 5, 100-byte ICMP Echos to 2026::34:2, timeout is 2 seconds:
@@ -2203,7 +2204,7 @@ route-map LP1 permit 30
  match ip address 43
   set local-pref 433
 route-map LP1 Deny 45
- match ip address 43
+ match ip address 45
 route-map LP1 Permit 50
 !
 route-map LP1 Permit 40
